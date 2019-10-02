@@ -66,22 +66,28 @@ d3.csv("/assets/data/data.csv")
     .attr("fill", "skyblue")
     .attr("opacity", ".7");
 
+    console.log(dataCsv);
+    console.log("-------");
+
+    
+
     var AbbrGroup = chartGroup.selectAll("text")
     .data(dataCsv)
     .enter()
     .append("text")
-    .style("font-size", "10")
-    .style("text-anchor", "middle")
-    .style('fill', 'white')
     .text(function(d) {
       console.log(d.abbr);
       return d.abbr;})
     .attr("x", d => xLinearScale(d.poverty))  //center coord x
     .attr("y", d => yLinearScale(d.healthcare))//center coord y
-    .attr("class", "scatterText");
+    .attr("class", "scatterText")
+    .style("font-size", "10")
+    .style("text-anchor", "middle")
+    .style('fill', 'white');
   
 
-
+    console.log("-------");
+    console.log(dataCsv);
 
     // Step 6: Initialize tool tip
     // ==============================
