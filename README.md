@@ -9,3 +9,7 @@ Data are visuzalized using D3.
 - Visualization is built in two level of difficulties: 
  <br>Level 1 for basic visualization, and 
  <br>Level 2 for multi-axis visualization. 
+
+ ## Level 1
+ In level 1, we insure that data integrity by manipulating and plotting a pair of data. In our example, we choose to look if there is a relationship between poverty and healthcare. 
+    ![Lev1](images/Lev1.PNG)
