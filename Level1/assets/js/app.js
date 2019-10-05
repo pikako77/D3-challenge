@@ -71,7 +71,7 @@ d3.csv("/assets/data/data.csv")
 
     
 
-    var AbbrGroup = chartGroup.selectAll("text")
+    var AbbrGroup = chartGroup.selectAll()
     .data(dataCsv)
     .enter()
     .append("text")
